@@ -1,0 +1,123 @@
+@import url('./var.css');
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+body,
+button {
+    font-family: "Poppins", serif;
+    /* font-size: 18px */
+}
+
+.margin-top-70 {
+    margin-top: 70px;
+}
+.primary-bg {
+    background-color: hsl(180, 66%, 49%);
+}
+
+.violet-bg {
+    background-color: hsl(257, 27%, 26%);
+}
+
+.secondary-bg {
+    background-color: hsl(0, 87%, 67%);
+}
+
+.gray-bg {
+    background-color: var(--gray-color);
+}
+
+.grayish-violet-bg {
+    background-color: hsl(257, 7%, 63%);
+}
+
+.dark-blue-bg {
+    background-color: hsl(255, 11%, 22%);
+}
+
+.dark-violet-bg {
+    background-color: hsl(260, 8%, 14%);
+}
+
+.primary-text {
+    color: hsl(180, 66%, 49%);
+}
+
+.violet-text {
+    color: hsl(257, 27%, 26%);
+}
+
+.secondary-text {
+    color: hsl(0, 87%, 67%);
+}
+
+.gray-text {
+    color: hsl(0, 0%, 75%);
+}
+
+.white-text {
+    color: #fff;
+}
+
+.grayish-violet-text {
+    color: hsl(257, 7%, 63%);
+}
+
+.dark-blue-text {
+    color: hsl(255, 11%, 22%);
+}
+
+.dark-violet-text {
+    color: hsl(260, 8%, 14%);
+}
+
+.font-size-large {
+    font-size: var(--font-size-large);
+}
+
+.font-size-medium {
+    font-size: var(--font-size-medium);
+}
+
+.light-blue-button {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    /* font-size: var(--font-size-medium); */
+    background-color: var(--primary-color);
+}
+
+.padding-left-common {
+    padding-left: 150px;
+}
+
+.padding-right-common {
+    padding-right: 150px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .padding-left-common {
+        padding-left: 20px;
+    }
+
+    .padding-right-common {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .padding-left-common {
+        padding-left: 20px;
+    }
+
+    .padding-right-common {
+        padding-right: 20px;
+    }
+}

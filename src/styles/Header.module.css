@@ -1,0 +1,99 @@
+@import url('./var.css');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+}
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logoImage {
+  height: 34px;
+}
+.nav {
+  display: flex;
+  gap: 15px;
+}
+.navButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--font-size-medium);
+}
+.rightSection {
+  display: flex;
+  gap: 30px;
+}
+.loginButton {
+  border: none;
+  background: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--font-size-medium);
+}
+.signUpButton {
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: var(--font-size-medium);
+}
+.burgerButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.mobileMenu {
+  position: absolute;
+  top: 68.8px;
+  width: calc(100% - 40px);
+  border-radius: 8px;
+  /* left: 0;
+  right: 0; */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.mobileActions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.divider {
+  margin: 15px 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+.desktopNav {
+  gap: 20px
+}
+@media (max-width: 768px) {
+  .desktopNav, .desktopActions {
+    display: none !important;
+  }
+
+  .burgerButton {
+    display: block !important;
+  }
+}
