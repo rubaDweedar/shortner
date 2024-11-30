@@ -29,7 +29,7 @@ function Header() {
       </div>
 
       <div style={{ display: isMenuOpen ? "none" : "flex" }} className={`${styles.desktopActions} ${styles.rightSection}`}>
-        <button className={`${styles.loginButton} grayish-violet-text`} onClick={() => null}>
+        <button className={`${styles.navButton} grayish-violet-text`} onClick={() => null}>
           Login
         </button>
         <button className="light-blue-button" onClick={() => null}>
@@ -56,7 +56,7 @@ function Header() {
           </nav>
           <hr className={styles.divider} />
           <div className={styles.mobileActions}>
-            <button className={`${styles.loginButton} white-text`} onClick={() => null}>
+            <button className={`${styles.navButton} white-text`} onClick={() => null}>
               Login
             </button>
             <button className="light-blue-button" onClick={() => null}>

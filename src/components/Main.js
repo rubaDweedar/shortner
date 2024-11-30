@@ -1,27 +1,16 @@
 import React from 'react';
-import '../styles/Main.css';
 import ShortenLinkSection from './ShortenLinkSection.js';
+import GetStarted from './GetStarted.js';
+import AdvancedStatistics from './AdvancedStatistics.js';
+import Boost from './Boost.js';
 
 function MainSection() {
   return (
     <main>
-      <div className="main padding-left-common">
-        <div className="leftSection">
-          <h1 className="largeText dark-blue-text">More than just shorter links</h1>
-          <p className="fadedText grayish-violet-text">
-            Build your brand's recognition and get detailed insights on how your links are performing.
-          </p>
-          <button className="light-blue-button font-size-large">Get Started</button>
-        </div>
-        <div className="rightSection">
-          <img 
-            src={process.env.PUBLIC_URL + '/images/illustration-working.svg'} 
-            alt="Illustration" 
-            className="image" 
-          />
-        </div>
-      </div>
+      <GetStarted />
       <ShortenLinkSection />
+      <AdvancedStatistics />
+      <Boost />
     </main>
   );
 }

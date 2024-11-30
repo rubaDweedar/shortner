@@ -1,0 +1,64 @@
+@import url('./var.css');
+
+.footer {
+    display: flex;
+    gap: 90px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.logo-image {
+    height: 34px;
+    filter: invert(100%) brightness(150%);
+}
+
+.icon-container {
+    flex: 1 1;
+}
+
+.actions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.action-header {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.social-link:hover {
+    filter: invert(27%) sepia(65%) saturate(601%) hue-rotate(155deg) brightness(92%) contrast(92%);
+}
+
+.social-link {
+    height: 24px;
+    width: 24px;
+    cursor: pointer 
+}
+
+.action-item {
+    cursor: pointer 
+}
+
+.primary-hover:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+    }
+    
+    .actions-container {
+        align-items: center;
+    }
+}

@@ -1,9 +1,11 @@
 :root {
     --primary-color: hsl(180, 66%, 49%);
+    --hover-color: hsl(180, 66%, 69%);
     --secondary-color: hsl(0, 87%, 67%);
+    --violet-color: hsl(257, 27%, 26%);
     --font-size-default: 14px;
     --font-size-medium: 16px;
-    --font-size-medium: 18px;
+    --font-size-large: 18px;
     --gray-color: #F0F1F6;
     --grayish-violet-color: hsl(257, 7%, 63%);
   }

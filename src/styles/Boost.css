@@ -1,0 +1,22 @@
+.boost {
+    background-image: url(../../public/images/bg-boost-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 0px; 
+    gap: 25px;
+
+    div {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .boost {
+        background-image: url(../../public/images/bg-boost-mobile.svg);
+    }
+}
