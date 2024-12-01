@@ -1,8 +1,6 @@
 @import url('./var.css');
 
 .advanced-statistics-container {
-    padding-top: 70px;
-    padding-bottom: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +16,6 @@
     width: 50%;
 
     div {
-        font-weight: 700;
         font-size: 1.8rem;
     }
 

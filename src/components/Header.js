@@ -16,23 +16,23 @@ function Header() {
         </div>
 
         <nav style={{ display: isMenuOpen ? "none" : "flex" }} className={`${styles.desktopNav} nav`}>
-          <button className={`${styles.navButton} grayish-violet-text`} onClick={() => null}>
+          <button className={`${styles.navButton} violet-hover grayish-violet-text font-weight-medium`} onClick={() => null}>
             Features
           </button>
-          <button className={`${styles.navButton} grayish-violet-text`} onClick={() => null}>
+          <button className={`${styles.navButton} violet-hover grayish-violet-text font-weight-medium`} onClick={() => null}>
             Pricing
           </button>
-          <button className={`${styles.navButton} grayish-violet-text`} onClick={() => null}>
+          <button className={`${styles.navButton} violet-hover grayish-violet-text font-weight-medium`} onClick={() => null}>
             Resources
           </button>
         </nav>
       </div>
 
       <div style={{ display: isMenuOpen ? "none" : "flex" }} className={`${styles.desktopActions} ${styles.rightSection}`}>
-        <button className={`${styles.navButton} grayish-violet-text`} onClick={() => null}>
+        <button className={`${styles.navButton} violet-hover grayish-violet-text font-weight-medium`} onClick={() => null}>
           Login
         </button>
-        <button className="light-blue-button" onClick={() => null}>
+        <button className="light-blue-button font-weight-medium hover-for-primary" onClick={() => null}>
           Sign Up
         </button>
       </div>
@@ -44,22 +44,22 @@ function Header() {
       {isMenuOpen && (
         <div className={styles.mobileMenu + " violet-bg"}>
           <nav className={styles.mobileNav}>
-            <button className={`${styles.navButton} white-text`} onClick={() => null}>
+            <button className={`${styles.navButton} violet-hover white-text font-weight-medium`} onClick={() => null}>
               Features
             </button>
-            <button className={`${styles.navButton} white-text`} onClick={() => null}>
+            <button className={`${styles.navButton} violet-hover white-text font-weight-medium`} onClick={() => null}>
               Pricing
             </button>
-            <button className={`${styles.navButton} white-text`} onClick={() => null}>
+            <button className={`${styles.navButton} violet-hover white-text font-weight-medium`} onClick={() => null}>
               Resources
             </button>
           </nav>
           <hr className={styles.divider} />
           <div className={styles.mobileActions}>
-            <button className={`${styles.navButton} white-text`} onClick={() => null}>
+            <button className={`${styles.navButton} violet-hover white-text font-weight-medium`} onClick={() => null}>
               Login
             </button>
-            <button className="light-blue-button" onClick={() => null}>
+            <button className="light-blue-button font-weight-medium hover-for-primary" onClick={() => null}>
               Sign Up
             </button>
           </div>

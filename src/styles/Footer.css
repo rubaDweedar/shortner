@@ -23,7 +23,6 @@
 }
 
 .action-header {
-    font-weight: 600;
     margin-bottom: 12px;
 }
 
@@ -45,10 +44,6 @@
 
 .action-item {
     cursor: pointer 
-}
-
-.primary-hover:hover {
-    color: var(--primary-color);
 }
 
 @media (max-width: 768px) {

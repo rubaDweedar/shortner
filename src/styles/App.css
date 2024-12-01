@@ -12,72 +12,92 @@ button {
     /* font-size: 18px */
 }
 
-.margin-top-70 {
-    margin-top: 70px;
+.margin-top-common {
+    margin-top: var(--main-space);
+}
+
+.margin-bottom-common {
+    margin-bottom: var(--main-space);
+}
+
+.padding-top-common {
+    padding-top: var(--main-space);
+}
+
+.padding-bottom-common {
+    padding-bottom: var(--main-space);
 }
 
 .primary-bg {
-    background-color: hsl(180, 66%, 49%);
+    background-color: var(--primary-color);
 }
 
 .violet-bg {
-    background-color: hsl(257, 27%, 26%);
+    background-color: var(--violet-color);
 }
 
 .secondary-bg {
-    background-color: hsl(0, 87%, 67%);
+    background-color: var(--secondary-color);
 }
 
 .gray-bg {
     background-color: var(--gray-color);
 }
 
+.main-gray-bg {
+    background-color: var(--main-gray-color);
+}
+
+.grayish-violet-bg {
+    background-color: var(--grayish-violet-color);
+}
+
+.dark-blue-bg {
+    background-color: var(--dark-blue-color);
+}
+
+.dark-violet-bg {
+    background-color: var(--dark-violet-color);
+}
+
 .white-bg {
     background-color: #fff;
 }
 
-.grayish-violet-bg {
-    background-color: hsl(257, 7%, 63%);
-}
-
-.dark-blue-bg {
-    background-color: hsl(255, 11%, 22%);
-}
-
-.dark-violet-bg {
-    background-color: hsl(260, 8%, 14%);
-}
-
 .primary-text {
-    color: hsl(180, 66%, 49%);
+    color: var(--primary-color);
 }
 
 .violet-text {
-    color: hsl(257, 27%, 26%);
+    color: var(--violet-color);
 }
 
 .secondary-text {
-    color: hsl(0, 87%, 67%);
+    color: var(--secondary-color);
 }
 
 .gray-text {
-    color: hsl(0, 0%, 75%);
+    color: var(--gray-color);
+}
+
+.main-gray-text {
+    color: var(--main-gray-color);
+}
+
+.grayish-violet-text {
+    color: var(--grayish-violet-color);
+}
+
+.dark-blue-text {
+    color: var(--dark-blue-color);
+}
+
+.dark-violet-text {
+    color: var(--dark-violet-color);
 }
 
 .white-text {
     color: #fff;
-}
-
-.grayish-violet-text {
-    color: hsl(257, 7%, 63%);
-}
-
-.dark-blue-text {
-    color: hsl(255, 11%, 22%);
-}
-
-.dark-violet-text {
-    color: hsl(260, 8%, 14%);
 }
 
 .font-size-large {
@@ -88,20 +108,39 @@ button {
     font-size: var(--font-size-medium);
 }
 
+.font-weight-default {
+    font-weight: var(--font-weight-default);
+}
+
+.font-weight-medium {
+    font-weight: var(--font-weight-medium);
+}
+
+.font-weight-bold {
+    font-weight: var(--font-weight-bold);
+}
+
 .light-blue-button {
     border: none;
     padding: 10px 25px;
     border-radius: 30px;
     cursor: pointer;
     color: white;
-    font-weight: 600;
     background-color: var(--primary-color);
 }
 
-.light-blue-button:hover {
-    background-color: var(--hover-color);
+.hover-for-primary:hover {
+    background-color: color-mix(in hsl, var(--primary-color), white 25%)
 }
 
+.primary-hover:hover {
+    color: var(--primary-color);
+}
+
+.violet-hover:hover {
+    color: var(--violet-color);
+}
+  
 .padding-left-common {
     padding-left: 150px;
 }

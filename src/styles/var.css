@@ -1,12 +1,18 @@
 :root {
     --primary-color: hsl(180, 66%, 49%);
-    --hover-color: hsl(180, 66%, 69%);
     --secondary-color: hsl(0, 87%, 67%);
     --violet-color: hsl(257, 27%, 26%);
+    --grayish-violet-color: hsl(257, 7%, 63%);
+    --dark-blue-color: hsl(255, 11%, 22%);
+    --dark-violet-color: hsl(260, 8%, 14%);
+    --main-gray-color: hsl(0, 0%, 75%);
+    --gray-color: #F0F1F6;
+    --main-space: 70px;
     --font-size-default: 14px;
     --font-size-medium: 16px;
     --font-size-large: 18px;
-    --gray-color: #F0F1F6;
-    --grayish-violet-color: hsl(257, 7%, 63%);
+    --font-weight-default: 500;
+    --font-weight-medium: 600;
+    --font-weight-bold: 700;
   }
   

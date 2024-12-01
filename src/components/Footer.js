@@ -18,7 +18,7 @@ const Footer = () => {
             {
                 actions.map((item, i) => (
                     <div key={i} className='actions-container'>
-                        <div className='action-header white-text'>
+                        <div className='action-header white-text font-weight-medium'>
                             {item.title}
                         </div>
                         {

@@ -28,12 +28,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-weight: 600;
   font-size: var(--font-size-medium);
-}
-
-.navButton:hover {
-  color: var(--violet-color);
 }
 
 .rightSection {
@@ -41,15 +36,6 @@
   gap: 30px;
 }
 
-.signUpButton {
-  border: none;
-  padding: 10px 25px;
-  border-radius: 30px;
-  cursor: pointer;
-  color: white;
-  font-weight: 600;
-  font-size: var(--font-size-medium);
-}
 .burgerButton {
   display: none;
   background: none;
@@ -57,6 +43,7 @@
   font-size: 24px;
   cursor: pointer;
 }
+
 .mobileMenu {
   position: absolute;
   top: 68.8px;
@@ -96,5 +83,4 @@
   .navButton:hover {
     color: var(--grayish-violet-color);
   }
-
 }

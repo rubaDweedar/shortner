@@ -10,9 +10,6 @@ function ShortenLinkSection() {
 
   useEffect(() => {
     const storedLinks = JSON.parse(localStorage.getItem('shortenedLinks')) || []
-    //   {original: "https://github.com/hassan-alnator/", shortened: "https://github.com/"},
-    //   {original: "https://github.com/Aseel-Dweedar/shortening/blob/main/src/components/Home/SearchSection/SearchSection.scss", shortened: "https://github.com/Aseel-"}
-
     setLinks(storedLinks);
   }, []);
 
@@ -28,6 +25,7 @@ function ShortenLinkSection() {
       const newLink = { original: link, shortened: shorten };
       const updatedLinks = [newLink, ...links];
       setLinks(updatedLinks);
+      setCopied(copiedLink + 1);
       localStorage.setItem('shortenedLinks', JSON.stringify(updatedLinks));
       setLink('');
 
@@ -62,7 +60,7 @@ function ShortenLinkSection() {
   };
 
   return (
-    <section className='margin-top-70'>
+    <section className='margin-top-common'>
         <div className='padding-right-common padding-left-common custom-background'>
           <div className="shorten-link-section violet-bg">
             <div className="input-container">
@@ -75,21 +73,21 @@ function ShortenLinkSection() {
               />
               {error && <p className="error-message secondary-text">{error}</p>}
             </div>
-            <button onClick={handleShorten} className="shorten-button primary-bg" disabled={isLoading}>{isLoading ? 'Shortening...' : 'Shorten it!'}</button>
+            <button onClick={handleShorten} className="shorten-button primary-bg font-weight-medium hover-for-primary" disabled={isLoading}>{isLoading ? 'Shortening...' : 'Shorten it!'}</button>
           </div>
         </div>
         <div className='padding-right-common padding-left-common gray-bg'>
-          <div className="linksContainer">
+          <div className="links-container">
             {links.map((link, index) => (
               <div key={index} className="card">
-                  <div className='originalLink'>{link.original}</div>
-                  <div className='shortenedLinkContainer'>
-                    <span className="shortenedLink">{link.shortened}</span>
+                  <div className='original-link'>{link.original}</div>
+                  <div className='shortened-link-container'>
+                    <span className="shortened-link">{link.shortened}</span>
                     <button
-                      className={(copiedLink == index ? 'violet-bg' : 'primary-bg') + " copy-button"}
+                      className={(copiedLink === index ? 'violet-bg' : 'primary-bg hover-for-primary') + " copy-button font-weight-medium"}
                       onClick={() => handleCopy(link.shortened, index)}
                     >
-                    {copiedLink == index ? 'Copied!' : 'Copy'}
+                    {copiedLink === index ? 'Copied!' : 'Copy'}
                     </button>
                   </div>
               </div>

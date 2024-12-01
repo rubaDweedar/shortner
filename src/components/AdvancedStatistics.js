@@ -25,9 +25,9 @@ const cards = [
 
 function AdvancedStatistics() {
   return (
-    <div className='padding-left-common padding-right-common gray-bg advanced-statistics-container'>
+    <div className='padding-left-common padding-right-common gray-bg advanced-statistics-container padding-top-common padding-bottom-common'>
         <div className='statistics-header'>
-            <div className='dark-violet-text statistics-title'>Advanced Statistics</div>
+            <div className='dark-violet-text statistics-title font-weight-bold'>Advanced Statistics</div>
             <p className='grayish-violet-text'>Track how your links are performing across the web with our advanced statistics dashboard.</p>
         </div>
         <div className='cards-container'>
@@ -39,7 +39,7 @@ function AdvancedStatistics() {
                             <img src={item.src} alt='static'/>
                         </div>
                         <h4 className='dark-violet-text'>{item.title}</h4>
-                        <p className='gray-text'>{item.description}</p>
+                        <p className='main-gray-text'>{item.description}</p>
                     </div>                   
                 ))
             }
